@@ -9,7 +9,7 @@ with open(path.join(here, 'README.md')) as fd:
 
 setup(
     name='pyopenssl-psk',
-    version='0.0.0',
+    version='1.0.0',
     description='Add PSK support to pyOpenSSL',
     long_description=readme,
     long_description_content_type='text/markdown',
