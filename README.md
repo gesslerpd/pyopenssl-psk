@@ -24,11 +24,11 @@ patch_context()
 
 ### Server Methods
 
-- `Context.use_psk_identity_hint(hint: bytes) -> None`
+- `Context.use_psk_identity_hint(hint: bytes) -> None` ([docs](https://www.openssl.org/docs/manmaster/man3/SSL_CTX_use_psk_identity_hint.html))
 
   Set the server PSK identity hint.
 
-- `Context.set_psk_server_callback(callback: server_callback) -> None`
+- `Context.set_psk_server_callback(callback: server_callback) -> None` ([docs](https://www.openssl.org/docs/manmaster/man3/SSL_CTX_set_psk_server_callback.html))
   
   Set a callback to populate the server PSK.
 
@@ -55,7 +55,7 @@ server = Connection(ctx)
 
 ### Client Methods
 
-- `Context.set_psk_client_callback(callback: client_callback) -> None`
+- `Context.set_psk_client_callback(callback: client_callback) -> None` ([docs](https://www.openssl.org/docs/manmaster/man3/SSL_CTX_set_psk_client_callback.html))
 
   Set a callback to populate the client PSK identity and PSK.
   
