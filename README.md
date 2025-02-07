@@ -2,7 +2,7 @@
 
 Add PSK support to pyOpenSSL.
 
-**Note:** PSK support is available in Python 3.13. For more information, refer to the [official Python 3.13 documentation](https://docs.python.org/3.13/library/ssl.html).
+**Note:** PSK support is available in Python 3.13+. For more information, refer to the [official Python documentation](https://docs.python.org/3/library/ssl.html).
 
 ## Installation
 
@@ -26,11 +26,11 @@ patch_context()
 
 ### Server Methods
 
-- `Context.use_psk_identity_hint(hint: bytes) -> None` ([docs](https://www.openssl.org/docs/manmaster/man3/SSL_CTX_use_psk_identity_hint.html)) ([stdlib ssl](https://docs.python.org/3.13/library/ssl.html#ssl.SSLContext.use_psk_identity_hint))
+- `Context.use_psk_identity_hint(hint: bytes) -> None` ([docs](https://www.openssl.org/docs/manmaster/man3/SSL_CTX_use_psk_identity_hint.html)) ([stdlib ssl](https://docs.python.org/3/library/ssl.html#ssl.SSLContext.use_psk_identity_hint))
 
   Set the server PSK identity hint.
 
-- `Context.set_psk_server_callback(callback: server_callback) -> None` ([docs](https://www.openssl.org/docs/manmaster/man3/SSL_CTX_set_psk_server_callback.html)) ([stdlib ssl](https://docs.python.org/3.13/library/ssl.html#ssl.SSLContext.set_psk_server_callback))
+- `Context.set_psk_server_callback(callback: server_callback) -> None` ([docs](https://www.openssl.org/docs/manmaster/man3/SSL_CTX_set_psk_server_callback.html)) ([stdlib ssl](https://docs.python.org/3/library/ssl.html#ssl.SSLContext.set_psk_server_callback))
   
   Set a callback to populate the server PSK.
 
@@ -57,7 +57,7 @@ server = Connection(ctx)
 
 ### Client Methods
 
-- `Context.set_psk_client_callback(callback: client_callback) -> None` ([docs](https://www.openssl.org/docs/manmaster/man3/SSL_CTX_set_psk_client_callback.html)) ([stdlib ssl](https://docs.python.org/3.13/library/ssl.html#ssl.SSLContext.set_psk_client_callback))
+- `Context.set_psk_client_callback(callback: client_callback) -> None` ([docs](https://www.openssl.org/docs/manmaster/man3/SSL_CTX_set_psk_client_callback.html)) ([stdlib ssl](https://docs.python.org/3/library/ssl.html#ssl.SSLContext.set_psk_client_callback))
 
   Set a callback to populate the client PSK identity and PSK.
   
